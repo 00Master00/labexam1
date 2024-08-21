@@ -1,0 +1,94 @@
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.registration-form input, 
+.registration-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #0056b3;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.submit {
+    text-align: center;
+    margin-top: 20px;
+}
+body {
+    background-color: #8fd9ef;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-heading {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #b3e5fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.small-select {
+    width: 30%; /* Adjusted to full width */
+    padding: 8px; /* Adjusted padding */
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;  
+    color: #333; 
+    border-radius: 4px; 
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.login-button {
+    background-color: #0288d1; /* Light blue */
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #0277bd; /* Darker blue */
+}
+
+.register-button {
+    background-color: #03a9f4; /* Slightly lighter blue */
+    color: white;
+}
+
+.register-button:hover {
+    background-color: #0288d1; /* Dark blue for hover effect */
+}

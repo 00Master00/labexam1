@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การลงทะเบียนผู้หางาน</title>
+    <link rel="stylesheet" href="เข้าสู่ระบบ.css">
+</head>
+<body>
+    <h2 class="main-heading">เข้าสู่ระบบ / ลงทะเบียน</h2>
+    
+    <div class="container">
+        <div class="form-container">
+            <form action="process_registration.php" method="post">
+                <div class="form-group">
+                    <select id="userType" name="userType" class="small-select">
+                        <option value="" disabled selected>เลือกประเภท</option>
+                        <option value="employer">ผู้ประกอบการ</option>
+                        <option value="jobSeeker">ผู้สมัครงาน</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">เลขประจำตัวประชาชน:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">รหัสผ่าน:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="login-button">เข้าสู่ระบบ</button>
+                    <p>หากท่านยังไม่มีรหัสผู้ใช้งาน</p>
+                    <button type="button" class="register-button" onclick="window.location.href='สมัครสมาชิก.html';">สมัครสมาชิก</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

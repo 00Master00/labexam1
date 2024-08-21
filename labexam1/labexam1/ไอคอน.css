@@ -1,0 +1,63 @@
+body {
+    background-color: rgba(123, 205, 246, 0.832);
+    font-family: Arial, sans-serif; /* Ensure the font supports Thai characters */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around; /* Evenly distribute icons with space around them */
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Ensure it does not exceed the maximum width */
+}
+
+.icon-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.icon {
+    width: 300px; /* Size of the icon box */
+    height: 300px; /* Size of the icon box */
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #333; /* Dark border for contrast */
+    border-radius: 25px; /* Rounded corners for a modern look */
+    background-color: #e0f7fa; /* Light color inside the border for a soft look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding inside the border */
+    box-sizing: border-box;
+    margin: 0 20px; /* Margin between icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.icon:hover {
+    transform: scale(1.05); /* Slightly enlarge icon on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+.left .icon {
+    background-image: url('111.png'); /* Replace with your left icon URL */
+}
+
+.right .icon {
+    background-image: url('112.png'); /* Replace with your right icon URL */
+}
+
+.icon span {
+    margin-top: 180px; /* Space between the icon and the text */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Text color */
+    text-align: center; /* Center align the text */
+    line-height: 1.2; /* Improve readability */
+}

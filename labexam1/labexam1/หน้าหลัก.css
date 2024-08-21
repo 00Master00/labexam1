@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F0F4F8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header, .content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5em; 
+    margin: 0;
+    line-height: 1.2;
+}
+
+.header-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.headers {
+    border: 2px solid black; 
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #000; 
+    color: #fff;
+}
+
+
+
+
+.header-left .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 0.9em; 
+    transition: color 0.3s;
+}
+
+.header-left .nav-link:hover {
+    color: #cce4ff;
+}
+
+.login-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 15px; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em; 
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+    text-align: center; 
+    overflow: hidden;
+}
+
+.image-container {
+    margin-bottom: 20px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+    max-width: 1000px; 
+}
+
+.features {
+    display: flex;
+    flex-direction: column; /* วางองค์ประกอบในแนวตั้ง */
+    align-items: center; /* จัดตำแหน่งให้อยู่ตรงกลางแนวตั้ง */
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* พื้นหลังเป็นสีดำ */
+    color: #fff; /* ข้อความเป็นสีขาว */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    max-width: 600px; /* จำกัดความกว้างให้พอดีกับหน้าจอ */
+    width: 100%; /* ให้ความกว้างเต็มที่ของ container */
+    margin: 0 auto; /* จัดตำแหน่งให้อยู่กลาง */
+    min-height: 300px; /* กำหนดความสูงขั้นต่ำเพื่อให้เนื้อหามีที่ว่างเพียงพอ */
+    display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่งเนื้อหา */
+    flex-direction: column; /* วางเนื้อหาในแนวตั้ง */
+    justify-content: center; /* จัดตำแหน่งเนื้อหาให้ตรงกลางแนวตั้ง */
+}
+
+
+.feature:hover {
+    background-color: #333; /* เปลี่ยนพื้นหลังเมื่อ hover */
+    transform: scale(1.02);
+}
+
+.feature h3 {
+    font-size: 1.25em; /* ปรับขนาดฟอนต์ให้เหมาะสม */
+    margin: 10px 0; /* เพิ่มระยะห่างด้านบนและด้านล่าง */
+    color: #fff; /* ข้อความเป็นสีขาว */
+}
+.feature h3 {
+    font-size: 1em; /* ลดขนาดฟอนต์ให้เล็กลง */
+    margin: 10px 0; /* เพิ่มระยะห่างด้านบนและด้านล่าง */
+    color: #fff; /* ข้อความเป็นสีขาว */
+}
+
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em; /* ปรับขนาดฟอนต์สำหรับหน้าจอเล็ก */
+    }
+
+    .header-left .nav-link {
+        margin-right: 10px; /* ลด margin สำหรับหน้าจอเล็ก */
+        font-size: 0.8em; /* ปรับขนาดฟอนต์สำหรับหน้าจอเล็ก */
+    }
+
+    .login-button {
+        padding: 8px 12px; /* ปรับ padding สำหรับหน้าจอเล็ก */
+        font-size: 0.8em; /* ปรับขนาดฟอนต์สำหรับหน้าจอเล็ก */
+    }
+
+    .feature {
+        padding: 15px; /* ปรับ padding สำหรับหน้าจอเล็ก */
+        max-width: 90%; /* จำกัดความกว้างสำหรับหน้าจอเล็ก */
+    }
+    
+}
