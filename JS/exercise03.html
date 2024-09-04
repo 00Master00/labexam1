@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 03</title>
+    <script defer src="exercise03.js"></script>
+</head>
+<body>
+    <h1>Digitize Exercise</h1>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" />
+    <button onclick="displayDigits()">Convert</button>
+    <p id="result"></p>
+
+    <script>
+        function displayDigits() {
+            const number = parseInt(document.getElementById('numberInput').value, 10);
+            const resultArray = digitize(number);
+            document.getElementById('result').textContent = resultArray.join(' ');
+        }
+    </script>
+</body>
+</html>
